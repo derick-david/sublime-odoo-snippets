@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+,'mail.alias.mixin'${0}
+]]></content>
+    <tabTrigger>mixin/mail.alias</tabTrigger>
+    <scope>source.python meta.structure.list.python</scope>
+    <description>Adds mail alias support</description>
+</snippet>

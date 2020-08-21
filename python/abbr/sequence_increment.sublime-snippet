@@ -23,7 +23,7 @@ def default_get(self, field_list):
     return default_values
 
 ]]></content>
-    <tabTrigger>var/line_number</tabTrigger>
+    <tabTrigger>field/line_number</tabTrigger>
     <scope>source.python</scope>
     <description>Line Number Add 10 automaticlly</description>
 </snippet>

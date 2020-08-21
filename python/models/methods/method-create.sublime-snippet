@@ -2,12 +2,6 @@
     <content><![CDATA[
 @api.model
 def create(self, values):
-    """
-        Create a new record for a model ${1:MODEL_CLASS}
-        @param values: provides a data for new record
-
-        @return: returns a id of new record
-    """
 
     result = super(${1:MODEL_CLASS}, self).create(values)${0}
 

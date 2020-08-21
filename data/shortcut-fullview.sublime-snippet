@@ -9,7 +9,6 @@
     - Parent menu ··: ${6:base.menu_custom}
     - View priority·: ${7:16}    
     - Sequence····..: ${8:10}
-    - Action help···: ${9:Something about ${1}}
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
 <!-- Tree view for "${2/(.)/\1/g}" -->
@@ -21,7 +20,7 @@
     <field name="priority" eval="${7/(.)/\1/g}" />
     <field name="active" eval="True" />
     <field name="arch" type="xml">
-        <tree string="${1} List" create="true" delete="true" edit="true">
+        <tree string="${1}" create="true" delete="true" edit="true">
             <field name="${3/(.)/\1/g}" />
 
         </tree>
@@ -37,7 +36,7 @@
     <field name="priority" eval="${7/(.)/\1/g}" />
     <field name="active" eval="True" />
     <field name="arch" type="xml">
-        <form string="${1} Form" create="true" delete="true" edit="true">
+        <form string="${1}" create="true" delete="true" edit="true">
             <header>
             </header>
             <sheet>
@@ -65,7 +64,7 @@
     <field name="priority" eval="${7/(.)/\1/g}" />
     <field name="active" eval="True" />
     <field name="arch" type="xml">
-        <search string="${1} Search">
+        <search string="${1}">
             <field name="${3/(.)/\1/g}" />
             
         </search>
@@ -78,18 +77,11 @@
     <field name="name">${1/(.)/\1/g}</field>
     <field name="res_model">${2/\.+/\./g}</field>
     <field name="view_mode">tree,form</field>
-    <field name="view_type">form</field>
+    <!-- <field name="view_type">form</field> -->
     <field name="target">current</field>
     <field name="domain">${4/(.)/\1/g}</field>
     <field name="context">${5/(.)/\1/g}</field>
     <field name="search_view_id" ref="view_${2/\./\_/g}_search" />
-    <field name="help" type="html">
-        <p class="oe_view_nocontent_create">
-            Click to add new ${1}
-        </p><p>
-            ${9:Something about ${1}}
-        </p>
-    </field>
 </record>
 
 <!-- Main menu for "${2/(.)/\1/g}" -->

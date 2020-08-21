@@ -14,7 +14,7 @@
     </content>
     <tabTrigger>act_window</tabTrigger>
     <scope>text.xml</scope>
-    <description>shortcut ir.actions.act_window</description>
+    <description>shortcut ir.actions.act_window !14</description>
 </snippet>
 <!-- 
         binding_model="${4:module.model}"

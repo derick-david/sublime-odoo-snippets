@@ -1,8 +1,23 @@
 <snippet>
     <content><![CDATA[
+
+STATE=[
+('draft', 'Draft'), 
+('confirmed', 'Confirmed'),  
+('closed', 'Closed'),  
+('canceled', 'Canceled')
+]
+
+READ_ONLY_STATE = {
+    'confirmed': [("readonly", True)],
+    "closed": [("readonly", True)],
+    "draft": [("readonly", False)],
+    "cancel": [("readonly", True)],
+}
+
 state = fields.Selection(
     string=u'State',
-    selection=[('draft', 'Draft'), ('confirmed', 'Confirmed'),  ('closed', 'Closed'),  ('cancelled', 'Cancelled')],
+    selection=STATE,
     default='draft',
     readonly=True,
 )
@@ -17,7 +32,7 @@ def action_draft(self):
 
 @api.multi
 def action_cancel(self):
-    self.write({'state': 'cancelled'})
+    self.write({'state': 'canceled'})
 
 @api.multi
 def action_close(self):
@@ -25,7 +40,7 @@ def action_close(self):
 
 ${0}
 ]]></content>
-    <tabTrigger>feature/_state</tabTrigger>
+    <tabTrigger>feature/status</tabTrigger>
     <scope>source.python</scope>
     <description>Adds state support</description>
 </snippet>

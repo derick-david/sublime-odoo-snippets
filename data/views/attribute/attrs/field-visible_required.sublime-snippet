@@ -2,7 +2,7 @@
     <content><![CDATA[
 attrs="{'invisible': [('${1:field}','not in',('${2:state}'))], 'required': [('${1:field}','in',('${2:state}'))] }"
 ]]></content>
-    <tabTrigger>attrs/required</tabTrigger>
+    <tabTrigger>attrs</tabTrigger>
     <scope>text.xml meta.tag.xml</scope>
-    <description>field visible and required</description>
+    <description>field attribute attrs visible and required</description>
 </snippet>

@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+ <label for="${1:field_name}" />
+<div class="o_row">
+    <field name="${1:field_name}" />
+    <span> / </span> 
+    ${0}
+    
+</div>
+]]></content>
+    <tabTrigger>layout/div</tabTrigger>
+    <scope>text.xml</scope>
+</snippet>

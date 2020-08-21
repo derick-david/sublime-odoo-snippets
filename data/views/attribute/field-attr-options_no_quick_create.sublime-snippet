@@ -4,5 +4,5 @@
 ]]></content>
     <tabTrigger>options_no_quick_create</tabTrigger>
     <scope>text.xml meta.tag.xml</scope>
-    <description>field attr options no_quick_create</description>
+    <description>field attr options: no_quick_create</description>
 </snippet>

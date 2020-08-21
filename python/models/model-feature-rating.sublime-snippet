@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+,'rating.mixin'${0}
+]]></content>
+    <tabTrigger>mixin/rating</tabTrigger>
+    <scope>source.python meta.structure.list.python</scope>
+    <description>Adds rating support</description>
+</snippet>

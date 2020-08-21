@@ -1,9 +1,12 @@
 <snippet>
     <content><![CDATA[
 <group>
-        ${0}
-    
+    <group>
+            ${0}
+    </group>
+    <group>
 
+    </group>
 </group>
 
 ]]></content>

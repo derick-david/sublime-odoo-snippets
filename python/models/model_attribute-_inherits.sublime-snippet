@@ -1,6 +1,10 @@
 <snippet>
     <content><![CDATA[
-_inherits = {'${1:MODEL_NAME}': '${2:RELATED_ID}'}${0}
+_inherits = {
+'${1:MODEL_NAME}': '${2:RELATED_ID}'
+,${0}
+
+}
 ]]></content>
     <tabTrigger>model/inherits</tabTrigger>
     <scope>source.python</scope>

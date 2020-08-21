@@ -5,7 +5,7 @@ def unlink(self):
     for record in self:
         if record.state not in ('draft'):
             raise UserError(
-                _(u'You cannot delete a document which is not draft or cancelled!')
+                _(u'You cannot delete a document which is not in state draft or canceled!')
             )
     return super(${1:MODEL_CLASS}, self).unlink()
 ]]></content>

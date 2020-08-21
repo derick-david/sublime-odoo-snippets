@@ -3,10 +3,10 @@
 _sql_constraints = [
     (
         '${1:name}',
-        '${2:constraint}',
+        '${2:UNIQUE( )}',
         '${3:message}'
     )${4}
-]${0}
+]${0} 
 ]]></content>
     <tabTrigger>model/constraints</tabTrigger>
     <scope>source.python</scope>

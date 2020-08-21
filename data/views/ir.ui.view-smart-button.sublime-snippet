@@ -5,7 +5,7 @@
     </button>
 ${0}
 ]]></content>
-    <tabTrigger>smart_button</tabTrigger>
+    <tabTrigger>button/smart</tabTrigger>
     <scope>text.xml</scope>
         <description>smart button definition</description>
 </snippet>

@@ -4,6 +4,6 @@
     ${0}
 </notebook>
 ]]></content>
-    <tabTrigger>notebook</tabTrigger>
+    <tabTrigger>layout/notebook</tabTrigger>
     <scope>text.xml</scope>
 </snippet>

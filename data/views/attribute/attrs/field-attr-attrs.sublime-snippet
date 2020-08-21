@@ -4,5 +4,5 @@ attrs="{ ${0} }"
 ]]></content>
     <tabTrigger>attrs</tabTrigger>
     <scope>text.xml meta.tag.xml</scope>
-    <description>field attrs</description>
+    <description>field attribute attrs</description>
 </snippet>

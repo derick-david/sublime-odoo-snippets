@@ -2,14 +2,6 @@
     <content><![CDATA[
 @api.multi
 def unlink(self):
-    """
-        Delete all record(s) from recordset
-        return True on success, False otherwise
-
-        @return: True on success, False otherwise
-
-        #TODO: process before delete resource
-    """
 
     result = super(${1:MODEL_CLASS}, self).unlink()${0}
 
